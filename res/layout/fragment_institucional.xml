@@ -1,0 +1,77 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/azul_pj"
+        android:orientation="vertical" >
+
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:text="Missão"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/laranja_pj" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Desenvolver nossos membros nas áreas técnica, empresarial e em competências interpessoais, por meio da realização de serviços com excelência, garantindo a satisfação dos clientes."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/branco" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:text="Visão"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/laranja_pj" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Ser reconhecida por realizar projetos com qualidade e eficiência."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/branco" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:text="Valores"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/laranja_pj" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Fazer Acontecer, Espírito de Equipe, Equilíbrio, Pensamento Estratégico, Profissionalismo, Paixão, Propriedade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/branco" />
+        
+    </LinearLayout>
+
+
+
+
+
+
