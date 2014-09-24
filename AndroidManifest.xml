@@ -27,6 +27,22 @@
             android:name=".InstitucionalActivity"
             android:label="@string/title_activity_institucional" >
         </activity>
+        <activity
+            android:name=".CadastroProjetosActivity"
+            android:label="@string/title_activity_cadastro_projetos"
+            android:parentActivityName=".InstitucionalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.polijunior.apppj.InstitucionalActivity" />
+        </activity>
+        <activity
+            android:name=".CadastroMembrosActivity"
+            android:label="@string/title_activity_cadastro_membros"
+            android:parentActivityName=".InstitucionalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.polijunior.apppj.InstitucionalActivity" />
+        </activity>
     </application>
 
 </manifest>
