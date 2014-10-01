@@ -47,6 +47,9 @@ public class Projetos {
 				u.setCliente(cursor.getString(1));
 				u.setTelefone(cursor.getString(2));
 				u.setEmail(cursor.getString(3));
+				u.setDescricao(cursor.getString(4));
+				u.setConheceu(cursor.getString(5));
+				u.setAtendente(cursor.getString(6));
 				list.add(u);
 				
 				

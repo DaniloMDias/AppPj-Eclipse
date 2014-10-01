@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    	
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/azul_pj">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Projeto"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+	
+    
+    
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_gravity="center"
+        />
+	
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como Conheceu a Poli Júnior"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/conheceu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quem Atendeu"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/atendente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/branco"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</ScrollView>    
+</FrameLayout>

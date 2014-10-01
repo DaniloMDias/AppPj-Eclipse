@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public final class BancoMembros extends SQLiteOpenHelper {
 
 	public static final String NOME_BANCO = "membros";
-	public static final int VERSAO_BANCO = 4;
+	public static final int VERSAO_BANCO = 9;
 	
 	public BancoMembros(Context context) {
 		super(context, NOME_BANCO, null, VERSAO_BANCO);
@@ -17,7 +17,7 @@ public final class BancoMembros extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		db.execSQL("create table membros(_id integer primary key autoincrement, nome text not null, celular text not null, email text not null, curso text not null);");
+		db.execSQL("create table membros(_id integer primary key autoincrement, nome text not null, curso text not null, celular text not null, email text not null);");
 		
 	}
 

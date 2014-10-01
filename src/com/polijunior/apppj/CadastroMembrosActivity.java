@@ -33,19 +33,20 @@ public class CadastroMembrosActivity extends Activity {
 	public void cadastrar(View view){
 		
 		EditText nome = (EditText)findViewById(R.id.editText1);
-		EditText celular = (EditText)findViewById(R.id.editText2);
-		EditText email = (EditText)findViewById(R.id.editText3);
+		EditText celular = (EditText)findViewById(R.id.editText2);		
 		EditText curso = (EditText)findViewById(R.id.editText4);
+		EditText email = (EditText)findViewById(R.id.editText3);
 		
+		membro.setCurso(curso.getText().toString());
 		membro.setNome(nome.getText().toString());
 		membro.setCelular(celular.getText().toString());
 		membro.setEmail(email.getText().toString());
-		membro.setCurso(curso.getText().toString());
+		
 		
 		Membros db = new Membros(this);
 		db.inserir(membro);
 		
-		Toast.makeText(getApplicationContext(), "Membro Cadastrado", 
+		Toast.makeText(getApplicationContext(), "Membro Cadastrado" + curso.getText().toString(), 
   		      Toast.LENGTH_SHORT).show();
 		
 		Intent intent = new Intent(this, InstitucionalActivity.class);

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/azul_pj" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:editable="true"
+        android:textColor="@color/branco"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:editable="true"
+        android:textColor="@color/branco"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/celular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:editable="true"
+        android:textColor="@color/branco"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curso"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@color/laranja_pj"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:editable="true"
+        android:textColor="@color/branco" 
+        android:layout_gravity="center"/>
+
+</LinearLayout>

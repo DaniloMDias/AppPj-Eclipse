@@ -7,6 +7,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -19,11 +20,19 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.os.Build;
 
 public class ListaMembrosActivity extends ListActivity implements OnItemClickListener {
+	
+	public final static String EXTRA_ID = "com.polijunior.apppj.ID";
+	public final static String EXTRA_NOME = "com.polijunior.apppj.NOME";
+	public final static String EXTRA_EMAIL = "com.polijunior.apppj.EMAIL";
+	public final static String EXTRA_CELULAR = "com.polijunior.apppj.CELULAR";
+	public final static String EXTRA_CURSO = "com.polijunior.apppj.CURSO";
 
-	private ListView lista;
+	public ListView lista;
+	public List<ClasseMembro> list;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +45,7 @@ public class ListaMembrosActivity extends ListActivity implements OnItemClickLis
 		
 		Membros bd = new Membros(this);
 		
-		List<ClasseMembro> list = bd.buscar();
+		list = bd.buscar();
 		setListAdapter(new MembroAdapter(this, list));
 	}
 
@@ -66,6 +75,23 @@ public class ListaMembrosActivity extends ListActivity implements OnItemClickLis
 			long id) {
 		
 		
+		
+		Intent intent = new Intent(this, PerfilMembroActivity.class);
+
+		
+		intent.putExtra(EXTRA_ID, String.valueOf(id));
+		intent.putExtra(EXTRA_NOME, list.get(position).getNome());
+		intent.putExtra(EXTRA_EMAIL, list.get(position).getEmail());
+		intent.putExtra(EXTRA_CELULAR, list.get(position).getCelular());
+		intent.putExtra(EXTRA_CURSO, list.get(position).getCurso());
+		
+		
+		
+		
+		
+		startActivity(intent);
+//		Toast.makeText(getApplicationContext(),, 
+//  		      Toast.LENGTH_SHORT).show();
 	}
 	
 	

@@ -9,17 +9,7 @@ public class ClasseProjeto {
 	private String conheceu;
 	private String atendente;
 	
-//	public ClasseProjeto(int id, String cliente, String telefone, String email, String descricao, String conheceu, String atendente){
-//		super();
-//		this._id = id;
-//		this.cliente = cliente;
-//		this.telefone = telefone;
-//		this.email = email;
-//		this.descricao = descricao;
-//		this.conheceu = conheceu;
-//		this.atendente = atendente;
-//	}
-	
+
 
 	public long getId(){
 		return id;

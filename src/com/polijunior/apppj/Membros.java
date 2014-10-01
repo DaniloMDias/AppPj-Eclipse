@@ -8,6 +8,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class Membros {
 	private SQLiteDatabase db;
@@ -25,7 +26,9 @@ public class Membros {
 		values.put("curso", membro.getCurso());
 		
 		
+		
 		db.insert("membros", null, values);
+		
 	}
 	
 	public void deletar(ClasseMembro projeto){
@@ -46,6 +49,7 @@ public class Membros {
 				u.setNome(cursor.getString(1));
 				u.setCelular(cursor.getString(2));
 				u.setEmail(cursor.getString(3));
+				u.setCurso(cursor.getString(4));
 				list.add(u);
 				
 				
@@ -54,5 +58,6 @@ public class Membros {
 		
 		return list;
 	}
+	
 
 }

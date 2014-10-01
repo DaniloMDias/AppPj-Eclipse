@@ -40,10 +40,15 @@ public final class R {
         public static final int logo_pj=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0014;
+        public static final int action_settings=0x7f0a001d;
+        public static final int atendente=0x7f0a0018;
         public static final int button1=0x7f0a000d;
-        public static final int cliente=0x7f0a0013;
+        public static final int celular=0x7f0a001b;
+        public static final int cliente=0x7f0a000e;
+        public static final int conheceu=0x7f0a0016;
         public static final int container=0x7f0a0000;
+        public static final int curso=0x7f0a001c;
+        public static final int descricao=0x7f0a0014;
         public static final int drawer_layout=0x7f0a0001;
         public static final int editText1=0x7f0a0005;
         public static final int editText2=0x7f0a0006;
@@ -54,38 +59,48 @@ public final class R {
         public static final int email=0x7f0a0012;
         public static final int gaveta=0x7f0a0002;
         public static final int imageView1=0x7f0a0003;
-        public static final int nome=0x7f0a0011;
+        public static final int nome=0x7f0a001a;
+        public static final int telefone=0x7f0a0010;
         public static final int textView1=0x7f0a0004;
+        public static final int textView11=0x7f0a0017;
         public static final int textView2=0x7f0a0009;
-        public static final int textView3=0x7f0a000e;
+        public static final int textView3=0x7f0a000f;
         public static final int textView4=0x7f0a000b;
-        public static final int textView5=0x7f0a000f;
-        public static final int textView6=0x7f0a0010;
+        public static final int textView5=0x7f0a0011;
+        public static final int textView6=0x7f0a0019;
+        public static final int textView7=0x7f0a0013;
+        public static final int textView9=0x7f0a0015;
     }
     public static final class layout {
         public static final int activity_cadastro_membros=0x7f030000;
         public static final int activity_cadastro_projetos=0x7f030001;
-        public static final int activity_institucional=0x7f030002;
-        public static final int activity_lista_membros=0x7f030003;
-        public static final int activity_lista_projetos=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int drawer_list_item=0x7f030006;
-        public static final int fragment_cadastro_membros=0x7f030007;
-        public static final int fragment_cadastro_projetos=0x7f030008;
-        public static final int fragment_institucional=0x7f030009;
-        public static final int fragment_lista_membros=0x7f03000a;
-        public static final int fragment_lista_projetos=0x7f03000b;
-        public static final int fragment_main=0x7f03000c;
-        public static final int membro=0x7f03000d;
-        public static final int projeto=0x7f03000e;
+        public static final int activity_detalhes_projeto=0x7f030002;
+        public static final int activity_institucional=0x7f030003;
+        public static final int activity_lista_membros=0x7f030004;
+        public static final int activity_lista_projetos=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_perfil_membro=0x7f030007;
+        public static final int drawer_list_item=0x7f030008;
+        public static final int fragment_cadastro_membros=0x7f030009;
+        public static final int fragment_cadastro_projetos=0x7f03000a;
+        public static final int fragment_detalhes_projeto=0x7f03000b;
+        public static final int fragment_institucional=0x7f03000c;
+        public static final int fragment_lista_membros=0x7f03000d;
+        public static final int fragment_lista_projetos=0x7f03000e;
+        public static final int fragment_main=0x7f03000f;
+        public static final int fragment_perfil_membro=0x7f030010;
+        public static final int membro=0x7f030011;
+        public static final int projeto=0x7f030012;
     }
     public static final class menu {
         public static final int cadastro_membros=0x7f090000;
         public static final int cadastro_projetos=0x7f090001;
-        public static final int institucional=0x7f090002;
-        public static final int lista_membros=0x7f090003;
-        public static final int lista_projetos=0x7f090004;
-        public static final int main=0x7f090005;
+        public static final int detalhes_projeto=0x7f090002;
+        public static final int institucional=0x7f090003;
+        public static final int lista_membros=0x7f090004;
+        public static final int lista_projetos=0x7f090005;
+        public static final int main=0x7f090006;
+        public static final int perfil_membro=0x7f090007;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
@@ -95,9 +110,11 @@ public final class R {
         public static final int hello_world=0x7f050001;
         public static final int title_activity_cadastro_membros=0x7f050007;
         public static final int title_activity_cadastro_projetos=0x7f050006;
+        public static final int title_activity_detalhes_projeto=0x7f05000b;
         public static final int title_activity_institucional=0x7f050005;
         public static final int title_activity_lista_membros=0x7f050009;
         public static final int title_activity_lista_projetos=0x7f050008;
+        public static final int title_activity_perfil_membro=0x7f05000a;
     }
     public static final class style {
         /** 

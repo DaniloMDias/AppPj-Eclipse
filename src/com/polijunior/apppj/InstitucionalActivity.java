@@ -146,8 +146,8 @@ public class InstitucionalActivity extends Activity implements OnItemClickListen
 					Intent intent = new Intent(this, ListaMembrosActivity.class);
 					
 					startActivity(intent);
-					Toast.makeText(getApplicationContext(), "posicao 1", 
-			    		      Toast.LENGTH_SHORT).show();
+//					Toast.makeText(getApplicationContext(), "posicao 1", 
+//			    		      Toast.LENGTH_SHORT).show();
 				}
 				
 				else if(position == 3){
