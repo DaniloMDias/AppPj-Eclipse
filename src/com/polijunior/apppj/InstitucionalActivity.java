@@ -143,11 +143,22 @@ public class InstitucionalActivity extends Activity implements OnItemClickListen
 					
 				}
 				else if(position == 2){
+					Intent intent = new Intent(this, ListaMembrosActivity.class);
+					
+					startActivity(intent);
 					Toast.makeText(getApplicationContext(), "posicao 1", 
 			    		      Toast.LENGTH_SHORT).show();
 				}
-		
+				
 				else if(position == 3){
+					Intent intent = new Intent(this, ListaProjetosActivity.class);
+					
+					startActivity(intent);
+//					Toast.makeText(getApplicationContext(), "posicao 1", 
+//			    		      Toast.LENGTH_SHORT).show();
+				}
+		
+				else if(position == 4){
 					Intent intent = new Intent(this, MainActivity.class);
 					intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 					startActivity(intent);
@@ -157,7 +168,7 @@ public class InstitucionalActivity extends Activity implements OnItemClickListen
 	class MyAdapter extends BaseAdapter{
 		private Context context;
 		String[] mListaLateral;
-		int[] images = {R.drawable.ic_action_new,R.drawable.ic_action_add_person, R.drawable.ic_action_cc_bcc, R.drawable.ic_action_cancel};
+		int[] images = {R.drawable.ic_action_new,R.drawable.ic_action_add_person, R.drawable.ic_action_cc_bcc,R.drawable.ic_action_edit, R.drawable.ic_action_cancel};
 		
 		public MyAdapter(Context context) {
 			this.context = context;

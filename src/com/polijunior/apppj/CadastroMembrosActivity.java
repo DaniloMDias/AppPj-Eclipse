@@ -10,11 +10,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 import android.os.Build;
+import com.polijunior.apppj.BancoMembros;
+
 
 public class CadastroMembrosActivity extends Activity {
-
+	
+	ClasseMembro membro = new ClasseMembro();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,11 +31,25 @@ public class CadastroMembrosActivity extends Activity {
 	}
 
 	public void cadastrar(View view){
+		
+		EditText nome = (EditText)findViewById(R.id.editText1);
+		EditText celular = (EditText)findViewById(R.id.editText2);
+		EditText email = (EditText)findViewById(R.id.editText3);
+		EditText curso = (EditText)findViewById(R.id.editText4);
+		
+		membro.setNome(nome.getText().toString());
+		membro.setCelular(celular.getText().toString());
+		membro.setEmail(email.getText().toString());
+		membro.setCurso(curso.getText().toString());
+		
+		Membros db = new Membros(this);
+		db.inserir(membro);
+		
 		Toast.makeText(getApplicationContext(), "Membro Cadastrado", 
   		      Toast.LENGTH_SHORT).show();
 		
 		Intent intent = new Intent(this, InstitucionalActivity.class);
-		
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
 	}
 

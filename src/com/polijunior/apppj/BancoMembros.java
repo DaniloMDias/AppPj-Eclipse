@@ -2,56 +2,30 @@ package com.polijunior.apppj;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.BaseColumns;
 
-public final class BancoMembros {
+public final class BancoMembros extends SQLiteOpenHelper {
+
+	public static final String NOME_BANCO = "membros";
+	public static final int VERSAO_BANCO = 4;
 	
-	public BancoMembros(){};
-	
-	 public static abstract class FeedEntry implements BaseColumns {
-	        public static final String TABLE_NAME = "membros";
-	        public static final String COLUMN_NAME_ENTRY_ID = "entryid";
-	        public static final String COLUMN_NAME_NOME = "nome";
-	        public static final String COLUMN_NAME_TELEFONE = "telefone";
-	        public static final String COLUMN_NAME_EMAIL = "email";
-	    }
-	 
-	 private static final String TEXT_TYPE = " TEXT";
-	 private static final String COMMA_SEP = ",";
-	 private static final String SQL_CREATE_ENTRIES =
-	     "CREATE TABLE " + FeedEntry.TABLE_NAME + " (" +
-	     FeedEntry._ID + " INTEGER PRIMARY KEY," +
-	     FeedEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-	     FeedEntry.COLUMN_NAME_NOME + TEXT_TYPE + COMMA_SEP +
-	     FeedEntry.COLUMN_NAME_TELEFONE + TEXT_TYPE + COMMA_SEP +
-	     FeedEntry.COLUMN_NAME_EMAIL + TEXT_TYPE + COMMA_SEP +
-	      // Any other options for the CREATE command
-	     " )";
+	public BancoMembros(Context context) {
+		super(context, NOME_BANCO, null, VERSAO_BANCO);
+		
+	}
 
-	 private static final String SQL_DELETE_ENTRIES =
-	     "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;
-	 
-	 
-	 public class FeedReaderDbHelper extends SQLiteOpenHelper {
-		    // If you change the database schema, you must increment the database version.
-		    public static final int DATABASE_VERSION = 1;
-		    public static final String DATABASE_NAME = "FeedReader.db";
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		db.execSQL("create table membros(_id integer primary key autoincrement, nome text not null, celular text not null, email text not null, curso text not null);");
+		
+	}
 
-		    public FeedReaderDbHelper(Context context) {
-		        super(context, DATABASE_NAME, null, DATABASE_VERSION);
-		    }
-		    public void onCreate(SQLiteDatabase db) {
-		        db.execSQL(SQL_CREATE_ENTRIES);
-		    }
-		    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		        // This database is only a cache for online data, so its upgrade policy is
-		        // to simply to discard the data and start over
-		        db.execSQL(SQL_DELETE_ENTRIES);
-		        onCreate(db);
-		    }
-		    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		        onUpgrade(db, oldVersion, newVersion);
-		    }
-		}
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		db.execSQL("drop table membros;");
+		onCreate(db);
+		
+	}
+
 }

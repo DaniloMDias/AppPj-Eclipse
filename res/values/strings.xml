@@ -17,10 +17,13 @@
         <item>Cadastrar Projeto</item>
         <item>Cadastrar Membro</item>
         <item>Contatos</item>
+        <item>Projetos</item>
         <item>Logout</item>
     </string-array>
 
     <string name="title_activity_cadastro_projetos">Cadastrar Projetos</string>
     <string name="title_activity_cadastro_membros">Cadastrar Membros</string>
+    <string name="title_activity_lista_projetos">Projetos Cadastrados</string>
+    <string name="title_activity_lista_membros">Contatos</string>
 
 </resources>

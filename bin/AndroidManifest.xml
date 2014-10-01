@@ -43,6 +43,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.polijunior.apppj.InstitucionalActivity" />
         </activity>
+        <activity
+            android:name=".ListaProjetosActivity"
+            android:label="@string/title_activity_lista_projetos"
+            android:parentActivityName=".InstitucionalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.polijunior.apppj.InstitucionalActivity" />
+        </activity>
+        <activity
+            android:name=".ListaMembrosActivity"
+            android:label="@string/title_activity_lista_membros"
+            android:parentActivityName=".InstitucionalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.polijunior.apppj.InstitucionalActivity" />
+        </activity>
     </application>
 
 </manifest>
