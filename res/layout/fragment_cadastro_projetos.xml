@@ -1,98 +1,109 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/azul_pj"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="6dp"
-        android:text="Dados do Cliente"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/laranja_pj" />
+	<ScrollView 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	
+	    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@color/azul_pj"
+			    android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:hint="Nome do Cliente"
-        android:inputType="textPersonName"
-        android:textColor="@color/branco" >
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_margin="6dp"
+		        android:text="Dados do Cliente"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@color/laranja_pj" />
+		
+		    <EditText
+		        android:id="@+id/editText1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:ems="10"
+		        android:hint="Nome do Cliente"
+		        android:inputType="textPersonName"
+		        android:textColor="@color/branco" >
+		
+		        <requestFocus />
+		    </EditText>
+		
+		    <EditText
+		        android:id="@+id/editText2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:ems="10"
+		        android:hint="Telefone do Cliente"
+		        android:inputType="phone"
+		        android:textColor="@color/branco" />
+		
+		    <EditText
+		        android:id="@+id/editText3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:ems="10"
+		        android:hint="E-mail do Cliente"
+		        android:inputType="textEmailAddress"
+		        android:textColor="@color/branco" />
+		
+		    <EditText
+		        android:id="@+id/editText4"
+		        android:layout_width="match_parent"
+		        android:layout_height="34dp"
+		        android:layout_gravity="center"
+		        android:layout_weight="1.38"
+		        android:ems="10"
+		        android:hint="Uma Breve Descrição do Projeto"
+		        android:inputType="textMultiLine"
+		        android:textColor="@color/branco" />
+		
+		    <EditText
+		        android:id="@+id/editText5"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="Como conheceu a Poli Júnior?"
+		        android:textColor="@color/branco" />
+		
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_margin="6dp"
+		        android:text="Dados do Cadastro"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@color/laranja_pj" />
+		
+		    <EditText
+		        android:id="@+id/editText6"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:ems="10"
+		        android:hint="Nome do Atendente"
+		        android:inputType="textPersonName"
+		        android:textColor="@color/branco" />
+		
+		    <Button
+		        android:id="@+id/button1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/azul_pj"
+		        android:onClick="cadastrar"
+		        android:text="CADASTRAR"
+		        android:textColor="@color/laranja_pj" />
+		
+		</LinearLayout>
+	</ScrollView>    
 
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:hint="Telefone do Cliente"
-        android:inputType="phone"
-        android:textColor="@color/branco" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:hint="E-mail do Cliente"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/branco" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:layout_gravity="center"
-        android:layout_weight="1.38"
-        android:ems="10"
-        android:hint="Uma Breve Descrição do Projeto"
-        android:inputType="textMultiLine"
-        android:textColor="@color/branco" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Como conheceu a Poli Júnior?"
-        android:textColor="@color/branco" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="6dp"
-        android:text="Dados do Cadastro"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/laranja_pj" />
-
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:hint="Nome do Atendente"
-        android:inputType="textPersonName"
-        android:textColor="@color/branco" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/azul_pj"
-        android:onClick="cadastrar"
-        android:text="CADASTRAR"
-        android:textColor="@color/laranja_pj" />
-
-</LinearLayout>
+</FrameLayout>

@@ -25,7 +25,7 @@
     <string name="title_activity_cadastro_membros">Cadastrar Membros</string>
     <string name="title_activity_lista_projetos">Projetos Cadastrados</string>
     <string name="title_activity_lista_membros">Contatos</string>
-    <string name="title_activity_perfil_membro">PerfilMembroActivity</string>
-    <string name="title_activity_detalhes_projeto">DetalhesProjetoActivity</string>
+    <string name="title_activity_perfil_membro">Perfil do Membro</string>
+    <string name="title_activity_detalhes_projeto">Detalhes do Projeto</string>
 
 </resources>
